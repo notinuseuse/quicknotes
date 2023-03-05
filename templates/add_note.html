@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="glassmorphism">
+        <form action="/add_note" method='POST'>
+            <label for='title' style="color: black">title:</label> <br>
+            <input type="text" name="title" placeholder="write your title">
+            <label for='content' style="color: black">content:</label> <br>
+            <input type="textarea" name="content" placeholder="write your content" rows="4">
+            <button type="submit" class="green">create note</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="glassmorphism">
+        <button class="green"><a href='/notes'>Home</a></button>
+        {% if message %}
+            {{message}}
+        {% endif %}
+        <div class="note">
+            {% if notes %}
+                {% for note in notes %}
+                <h1 class="note_title">{{note.title}}</h1>
+                <p class="note_content">{{note.content}}</p>
+                <a href="/delete_note/{{note.id}}">delete note</a>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+    
+    </div>
+{% endblock %}

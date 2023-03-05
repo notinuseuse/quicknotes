@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="glassmorphism">
+        <h1 style="color: black"> QuickNotes </h1>
+        <button  class="green"><a href="/show_notes">Show Notes</a></button>
+        <a href="/login"></a><button  class="green"><a href="/add_note">Create Note</a></button></a>
+
+        <form method="POST" action="\logout">
+            <button type="submit" class="green"> Logout &nbsp;&nbsp;&nbsp;</button>
+        </form>
+    </div>
+{% endblock %}
