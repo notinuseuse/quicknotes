@@ -1,0 +1,78 @@
+.glassmorphism{
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    min-height: 400px;
+    width: 500px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"], input[type="textarea"] {
+    background-color: rgba(255, 255, 255, 0.25);
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: black;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+
+input[type="textarea"]{
+    columns: 4;
+    row-gap: 3;
+    
+}
+.green{
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%;
+}
+
+a{
+    text-decoration: none;
+    color: none;
+
+}
+
+.note{
+    border-style: solid;
+    border-color: bisque;
+    border-radius: 5px;
+    border-width: 5px;
+    padding-left: 2cm;
+    padding-right: 2cm;
+
+    color: black;
+    text-align: center;
+    margin-left: 2cm;
+    margin-right: 2cm;
+}
+
+.note_title{
+    font-family: monospace;
+    text-decoration: underline;
+}
+
+.note_content{
+    font-weight: bolder;
+}
